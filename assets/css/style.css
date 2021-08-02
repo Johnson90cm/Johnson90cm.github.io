@@ -11,93 +11,53 @@ html {
   }
 
 body {
+    margin: 0;
     background-color: var(--main);
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 header {
-    padding: 25px;
+    padding: 478px;
     display: flex;
     flex-wrap: wrap;
+    background-image: url(/assets/images/hero.jpg);
+    background-size: cover;
+    background-position: center;
     justify-content: center;
-
 }
 
 header h1 {
-    font-size: xx-large;
+    margin-top: -50px;
 }
 
 header a {
-    color: var(--accent);
+    font-size: 100px;
+    color: var(--main);
     text-decoration: none;
-    border-bottom: solid 1px var(--secondary);
-
-}
-
-header a:hover {
-    color: var(--secondary);
 }
 
 .navigation ul {
+    margin-top: -450px;
+    margin-left: -350px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px 250px 25px;
+    justify-content: center;
     list-style: none;
-    font-size: large;
+    font-size: x-large;
 }
 
 .navigation ul li a {
-    color: var(--accent);
-    text-decoration: none;
-}
-
-.hero {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 50px 50px;
-    padding: 100px;
-    justify-content: center;
-}
-
-.hero-photo {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-
-.hero-photo img {
-    justify-content: center;
-    border-radius: 100px;
-    width: 25%;
-}
-
-.hello {
-    display: flex;
-    flex-wrap: wrap;
-    color: var(--secondary);
-    justify-content: center;
-    padding-top: 50px;
-}
-
-.hello h2 {
-    width: 100%;
-    padding-bottom: 50px;
-}
-
-.hello a {
-    color: var(--accent);
+    color: var(--main);
+    padding: 0 15px;
     text-decoration: none;
 }
 
 .bio {
     display: flex;
     flex-wrap: wrap;
-    margin: 50px 50px;
-    padding: 100px;
-    background-color: var(--tertiary);
-    justify-content: center;
+    margin: 400px 0;
+    padding: 200px;
+    border-radius: 15px;
 }
 
 .bio-text h2 {
@@ -105,7 +65,13 @@ header a:hover {
 }
 
 .bio-text p {
-    color: coral;
+    font-size: x-large;
+}
+
+.hero2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .applications {
@@ -114,4 +80,8 @@ header a:hover {
     margin: 50px 50px;
     padding: 100px;
     justify-content: space-around
+}
+
+.applications img {
+    border-radius: 15px;
 }
