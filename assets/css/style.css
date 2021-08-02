@@ -1,21 +1,26 @@
 
 :root {
-    --main: #e3e3e3;
+    --main: #f0f0f0;
     --secondary: #9c8b7b;
+    --tertiary: #d6d6d6;
     --accent: #d45137;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 body {
     background-color: var(--main);
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 header {
-    padding: 100px;
+    padding: 25px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    border-bottom: 1px solid var(--secondary);
+
 }
 
 header h1 {
@@ -25,14 +30,12 @@ header h1 {
 header a {
     color: var(--accent);
     text-decoration: none;
+    border-bottom: solid 1px var(--secondary);
+
 }
 
 header a:hover {
     color: var(--secondary);
-}
-
-header span {
-    color: var(--accent);
 }
 
 .navigation ul {
@@ -40,11 +43,75 @@ header span {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    list-style: none;;
+    padding: 50px 250px 25px;
+    list-style: none;
+    font-size: large;
 }
 
-.hero div {
-    display: inline-block;
-    padding: 50px auto;
-    background-color: var(--secondary);
+.navigation ul li a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 50px;
+    padding: 100px;
+    justify-content: center;
+}
+
+.hero-photo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.hero-photo img {
+    justify-content: center;
+    border-radius: 100px;
+    width: 25%;
+}
+
+.hello {
+    display: flex;
+    flex-wrap: wrap;
+    color: var(--secondary);
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.hello h2 {
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.hello a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.bio {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 50px;
+    padding: 100px;
+    background-color: var(--tertiary);
+    justify-content: center;
+}
+
+.bio-text h2 {
+    justify-content: center;
+}
+
+.bio-text p {
+    color: coral;
+}
+
+.applications {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 50px;
+    padding: 100px;
+    justify-content: space-around
 }
