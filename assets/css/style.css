@@ -106,7 +106,7 @@ header nav ul li a {
 
 .applications {
     margin: 15px 0;
-    padding: 250px;
+    padding: 100px;
     display: flex;
     flex-wrap: wrap;
     background-image: url(/assets/images/hero.jpg);
@@ -116,18 +116,21 @@ header nav ul li a {
     justify-content: center;
 }
 
-.applications img {
-    height: 150px;
-    width: 300px;
+.applications img:hover {
+    opacity: 85%;
 }
 
+.run-buddy {
+    width: 100%;
+}
 .run-buddy img {
-    height: 350px;
+    height: 300px;
     width: 500px;
 }
 
-.applications img:hover {
-    opacity: 85%;
+.application2 img {
+    height: 200px;
+    width: 250px;
 }
 
 footer {
@@ -160,7 +163,6 @@ footer a {
     }
 
     .hero h1 {
-        color: greenyellow;
         margin: 100px;
     }
 
@@ -173,8 +175,12 @@ footer a {
     }
 
     .run-buddy img {
-        margin: 25px;
-        height: 250px;
+        height: 200px;
+        width: 400px;
+    }
+
+    .application2 img {
+        height: 200px;
         width: 400px;
     }
 
@@ -192,7 +198,6 @@ footer a {
         font-size: xx-large;
     }
     .hero h1 {
-        color: rgb(255, 47, 47);
         font-size: 85px;
     }
 
@@ -217,7 +222,6 @@ footer a {
 
 @media screen and (max-width: 575px) {
     .hero h1 {
-        color: rgb(61, 47, 255);
         font-size: 75px;
     }
 
