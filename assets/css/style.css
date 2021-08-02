@@ -1,7 +1,7 @@
 
 :root {
     --main: #f0f0f0;
-    --secondary: #9c8b7b;
+    --secondary: #424242;
     --tertiary: #d6d6d6;
     --accent: #d45137;
 }
@@ -27,13 +27,20 @@ header {
 }
 
 header h1 {
-    margin-top: -50px;
+    margin-top: -50px; 
 }
 
 header a {
+    background: rgba(71, 71, 71, .75);
+    padding: 0 50px;
     font-size: 100px;
     color: var(--main);
     text-decoration: none;
+    border-radius: 15px;
+}
+
+.name {
+    opacity: 1;
 }
 
 .navigation ul {
@@ -55,33 +62,80 @@ header a {
 .bio {
     display: flex;
     flex-wrap: wrap;
-    margin: 400px 0;
-    padding: 200px;
+    justify-content: space-around;
+    margin: 300px 0 100px;
+    padding: 200px 0 0;
     border-radius: 15px;
-}
-
-.bio-text h2 {
-    justify-content: center;
 }
 
 .bio-text p {
     font-size: x-large;
+    line-height: 1;
 }
 
-.hero2 {
+.bio-text p:nth-child(odd) {
+    background-color: var(--secondary);
+    color: var(--main);
+}
+
+.bio-text h2 {
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.bio-quote {
+    justify-content: center;
+    
+}
+
+.bio-quote p {
+    margin-top: 100px;
+    font-size: xx-large;
+}
+
+.bio-quote h1 {
     justify-content: center;
 }
 
 .applications {
+
     display: flex;
     flex-wrap: wrap;
-    margin: 50px 50px;
-    padding: 100px;
-    justify-content: space-around
+    margin: 0 0 50px 0;
+    justify-content: center;
+
+}
+
+.applications-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .applications img {
-    border-radius: 15px;
+    padding: 25px;
+    height: 350px;
+    width: 500px;
+    border-radius: 50px;
+}
+
+.applications img:hover {
+    opacity: 50%;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer h1 {
+    font-size: 75px;
+}
+
+footer a {
+    font-size: 25px;
+    color: var(--secondary);
 }
