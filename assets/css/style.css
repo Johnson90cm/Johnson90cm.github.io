@@ -60,6 +60,10 @@ header nav ul li a {
     text-align: center;
 }
 
+.hero span {
+    color: var(--accent);
+}
+
 .name {
     opacity: 1;
 }
